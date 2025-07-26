@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Startup Funding Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #004c99;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Predict Startup Funding</h2>
+        <form action="/predict" method="POST">
+            <label>Industry:</label>
+            <select name="industry">
+                {% set industries = [
+                    'Technology', 'Healthcare', 'Education', 'Finance',
+                    'E-commerce', 'Real Estate', 'Travel', 'Gaming',
+                    'Food & Beverage', 'Logistics', 'Agriculture', 'Media'
+                ] %}
+                {% for item in industries %}
+                <option value="{{ item }}">{{ item }}</option>
+                {% endfor %}
+            </select>
+
+            <label>Investment Type:</label>
+            <select name="investment_type">
+                {% set investment_types = [
+                    'Seed Funding', 'Series A', 'Series B', 'Series C',
+                    'Pre-Seed', 'Angel Investment', 'Venture Round',
+                    'Private Equity', 'Debt Financing', 'Convertible Note',
+                    'Crowdfunding', 'Incubation Grant'
+                ] %}
+                {% for item in investment_types %}
+                <option value="{{ item }}">{{ item }}</option>
+                {% endfor %}
+            </select>
+
+            <label>City:</label>
+            <select name="city">
+                {% set cities = [
+                    'Bangalore', 'Mumbai', 'Delhi', 'Hyderabad',
+                    'Chennai', 'Pune', 'Gurgaon', 'Kolkata',
+                    'Ahmedabad', 'Noida', 'Jaipur', 'Indore'
+                ] %}
+                {% for item in cities %}
+                <option value="{{ item }}">{{ item }}</option>
+                {% endfor %}
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
