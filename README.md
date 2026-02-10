@@ -53,11 +53,11 @@ This makes the application lightweight, interactive, and easy to deploy.
 
 ## 🔮 Future Enhancements
 
-* 📈 Add numerical features such as **startup age**, **team size**, or **revenue**
-* 🤖 Experiment with advanced models like **Random Forest, XGBoost, or Linear Regression**
-* 📊 Display prediction confidence or range estimates
-* 🌐 Deploy the app on cloud platforms (Render, Heroku)
-* 📁 Enable bulk predictions using CSV upload
+ 📈 Add numerical features such as **startup age**, **team size**, or **revenue**
+🤖 Experiment with advanced models like **Random Forest, XGBoost, or Linear Regression**
+ 📊 Display prediction confidence or range estimates
+ 🌐 Deploy the app on cloud platforms (Render, Heroku)
+ 📁 Enable bulk predictions using CSV upload
 
 
 ## 📌 Conclusion
