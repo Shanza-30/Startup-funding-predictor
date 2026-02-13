@@ -63,3 +63,5 @@ This makes the application lightweight, interactive, and easy to deploy.
 ## 📌 Conclusion
 
 This project highlights the **practical application of machine learning in the startup ecosystem**, showcasing how predictive models can be combined with web technologies to build intelligent, data-driven tools. It serves as an excellent project for learning **applied ML, regression modeling, and ML deployment using Flask**.
+
+
